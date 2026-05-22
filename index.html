@@ -3,300 +3,197 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rafael Arvizu | Portafolio Cuantitativo & Ingeniería Física</title>
-    <meta name="description" content="CV y portafolio de Rafael Alejandro Arvizu Jiménez. Ingeniería Física Industrial, FEA 3D, Lean Six Sigma.">
-    <meta name="author" content="Rafael Alejandro Arvizu Jiménez">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <title>Rafael Arvizu - Portafolio y CV</title>
+    <style>
+        /* Estilos CSS integrados para un diseño profesional y limpio */
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --accent-color: #3498db;
+            --text-color: #333;
+            --bg-color: #f9f9f9;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 40px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            margin: 0 0 10px 0;
+            font-size: 2.5em;
+        }
+
+        .contact-info {
+            color: #666;
+            font-size: 0.95em;
+        }
+
+        .contact-info a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        h2 {
+            color: var(--secondary-color);
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+
+        .job-title {
+            font-weight: bold;
+            font-size: 1.1em;
+            color: var(--primary-color);
+        }
+
+        .date {
+            font-style: italic;
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+
+        .company {
+            font-weight: 500;
+            color: var(--secondary-color);
+            margin-bottom: 10px;
+        }
+
+        ul {
+            margin-top: 5px;
+            padding-left: 20px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .job-header {
+                flex-direction: column;
+            }
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+            .container {
+                margin: 10px;
+                padding: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
 
-    <!-- ============ NAVEGACIÓN ============ -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="#" class="nav-logo">RA<span>.</span></a>
-            <div class="nav-menu" id="navMenu">
-                <a href="#cv" class="nav-link">Currículum</a>
-                <a href="#portfolio" class="nav-link">Portafolio</a>
-                <a href="#contact" class="nav-link contact-btn-nav">Contacto</a>
+    <div class="container">
+        <header>
+            <h1>Rafael Alejandro Arvizu Jiménez [cite: 1]</h1>
+            <div class="contact-info">
+                Monterrey, Nuevo León, México | rarvizu271@gmail.com | (+52) 221 386 1304 [cite: 2]<br>
+                <a href="https://linkedin.com/in/rarvizuifi" target="_blank">linkedin.com/in/rarvizuifi</a> | 
+                <a href="https://github.com/rarvizu271" target="_blank">github.com/rarvizu271</a> [cite: 3]
             </div>
-            <div class="nav-actions">
-                <button id="themeToggle" class="theme-toggle-btn" aria-label="Cambiar tema">
-                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m0-12.728l.707.707m12.728 12.728l.707-.707M12 8a4 4 0 100 8 4 4 0 000-8z"/></svg>
-                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
-                </button>
-                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menú">
-                    <span></span><span></span><span></span>
-                </button>
+        </header>
+
+        <section>
+            <h2>Perfil Profesional [cite: 10]</h2>
+            <p>Estudiante de Ingeniería Física Industrial con sólida formación en modelado matemático, optimización de algoritmos y análisis estadístico[cite: 11]. Experiencia en el desarrollo de simulaciones numéricas complejas y procesamiento de datos cuantitativos en Python y MATLAB[cite: 12]. Competente en planeación estratégica, optimización de procesos bajo metodologías ágiles y gestión eficiente de recursos, con un enfoque orientado a la resolución de problemas complejos y toma de decisiones basada en datos[cite: 13].</p>
+        </section>
+
+        <section>
+            <h2>Educación [cite: 4]</h2>
+            <div class="job-header">
+                <div class="job-title">Tecnológico de Monterrey [cite: 5]</div>
+                <div class="date">Fecha estimada de graduación: Junio 2028 [cite: 5]</div>
             </div>
-        </div>
-    </nav>
+            <div class="company">Ingeniería Física Industrial [cite: 6]</div>
+            <ul>
+                <li><strong>Promedio:</strong> 95 | <strong>GPA:</strong> 4.0/4.0 [cite: 7]</li>
+                <li><strong>Certificación:</strong> Black Belt – Lean Six Sigma (Gestión de Calidad y Optimización de Procesos)[cite: 8].</li>
+                <li><strong>Trabajo de Curso:</strong> Análisis de Datos, Estadística Aplicada, Física Computacional, Modelación Físico-Matemática[cite: 9].</li>
+            </ul>
+        </section>
 
-    <!-- ============ HERO / ENCABEZADO ============ -->
-    <header class="hero">
-        <div class="hero-bg-glow"></div>
-        <div class="container hero-grid">
-            <!-- FOTO: Reemplaza src con tu foto real -->
-            <div class="photo-frame">
-                <div class="photo-placeholder" id="photoArea">
-                    <!-- Cambia esta imagen por tu foto personal: -->
-                    <!-- <img src="assets/foto.jpg" alt="Rafael Arvizu"> -->
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/></svg>
-                    <span>Tu Foto Aquí</span>
-                </div>
+        <section>
+            <h2>Experiencia [cite: 14]</h2>
+            
+            <div class="job-header">
+                <div class="job-title">Diseñador e Implementador de Proyecto Social [cite: 16]</div>
+                <div class="date">Junio 2025 - Agosto 2025 [cite: 15]</div>
             </div>
-            <div class="hero-info">
-                <span class="hero-badge">Ingeniería Física Industrial</span>
-                <h1>Rafael Alejandro<br><span class="gradient-text">Arvizu Jiménez</span></h1>
-                <p class="hero-subtitle">Modelado Físico-Matemático · Optimización de Algoritmos · FEA 3D</p>
-                <p class="hero-desc">Estudiante en el <strong>Tecnológico de Monterrey</strong> con promedio de <strong>95 (GPA 4.0/4.0)</strong>. Especializado en simulaciones numéricas complejas, procesamiento de señales y optimización estructural cuantitativa.</p>
-                <div class="hero-actions">
-                    <a href="assets/Rafael_Arvizu_CV.pdf" target="_blank" class="btn btn-primary">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" width="18" height="18"><path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
-                        Descargar CV
-                    </a>
-                    <a href="#portfolio" class="btn btn-outline">Ver Portafolio</a>
-                    <a href="#contact" class="btn btn-outline">Contacto</a>
-                </div>
+            <div class="company">Fundación Asilo Vivir De Amor F.B.P - Puebla, Pue. [cite: 15]</div>
+            <ul>
+                <li>Planeé e implementé un programa social orientado a la mentoría de voluntarios, coordinando equipos para mejorar la integración y retención, con un enfoque en fortalecer la calidad del servicio comunitario[cite: 17].</li>
+            </ul>
+
+            <div class="job-header">
+                <div class="job-title">Diseñador de Campaña de Visibilidad Social [cite: 19]</div>
+                <div class="date">Enero 2025 - Junio 2025 [cite: 18]</div>
             </div>
-        </div>
-    </header>
+            <div class="company">Banco de Tapitas A.C. – Ciudad de México, CDMX [cite: 18]</div>
+            <ul>
+                <li>Diseñé y ejecuté una campaña de concientización social respecto al cáncer infantil visto desde los ojos de los niños gestionando actividades de comunicación y difusión, la cual fue reconocida con un premio por su impacto social[cite: 20].</li>
+            </ul>
 
-    <!-- ============ SECCIÓN: CURRÍCULUM VITAE ============ -->
-    <section id="cv" class="section-padding">
-        <div class="container">
-            <h2 class="section-title">Currículum Vitae</h2>
-
-            <!-- === PERFIL PROFESIONAL === -->
-            <div class="cv-block">
-                <h3 class="cv-heading">Perfil Profesional</h3>
-                <p>Estudiante de Ingeniería Física Industrial con experiencia en liderazgo, gestión de colectivos y coordinación de equipos de trabajo. Combino una sólida formación científica con competencias en planeación estratégica, análisis de datos y gestión de recursos. Manejo software de organización y gestión documental, además de haber coordinado campañas de impacto social desarrollando modelos de financiamiento y mentoría. Me distingo por el pensamiento crítico, la visión estratégica y la capacidad de aportar soluciones innovadoras en contextos sociales e industriales.</p>
+            <div class="job-header">
+                <div class="job-title">Vicepresidente, Coordinador de Finanzas y Logística [cite: 22]</div>
+                <div class="date">Enero 2022 - Enero 2024 [cite: 21]</div>
             </div>
+            <div class="company">TecStem – Grupo Estudiantil de Ciencias – Puebla, Pue. [cite: 21]</div>
+            <ul>
+                <li>Desempeñé funciones como vicepresidente, coordinador de finanzas y logística, liderando proyectos estudiantiles, gestionando los recursos del grupo y organizando eventos académicos con impacto en la comunidad estudiantil[cite: 23].</li>
+            </ul>
+        </section>
 
-            <!-- === EDUCACIÓN === -->
-            <div class="cv-block">
-                <h3 class="cv-heading">Educación</h3>
-                <div class="cv-entry">
-                    <div class="cv-entry-header">
-                        <div><strong>Ingeniería Física Industrial</strong><br><span class="cv-institution">Tecnológico de Monterrey</span></div>
-                        <span class="cv-date">Graduación: Junio 2028</span>
-                    </div>
-                    <ul class="cv-list">
-                        <li>Promedio: 95 | GPA: 4.0/4.0</li>
-                        <li>Trabajo de Curso: Física computacional, Modelados físicos-matemáticos, Análisis de datos, Estadística aplicada, Termodinámica, Electromagnetismo, Física de materiales.</li>
-                    </ul>
-                </div>
-                <div class="cv-entry">
-                    <div class="cv-entry-header">
-                        <div><strong>Curso en Nanotecnología</strong><br><span class="cv-institution">Massachusetts Institute of Technology (MIT)</span></div>
-                        <span class="cv-date">Completado en línea</span>
-                    </div>
-                </div>
-                <div class="cv-entry">
-                    <div class="cv-entry-header">
-                        <div><strong>Certificación Black Belt – Lean Six Sigma</strong><br><span class="cv-institution">Gestión de calidad y mejora de procesos</span></div>
-                        <span class="cv-date"><a href="assets/Diploma_Black_Belt.pdf" target="_blank" class="accent-link">Ver Credencial →</a></span>
-                    </div>
-                </div>
+        <section class="skills-grid">
+            <div>
+                <h2>Habilidades Técnicas [cite: 24]</h2>
+                <ul>
+                    <li><strong>Lenguajes y Software:</strong> Python, MATLAB, Excel avanzado, herramientas de gestión de proyectos (Notion, Trello, etc)[cite: 25].</li>
+                    <li><strong>Competencias Avanzadas:</strong> Modelado matemático, análisis cuantitativo, procesamiento de señales y series de tiempo, diseño de experimentos, metodología Lean Six Sigma[cite: 26].</li>
+                </ul>
             </div>
-
-            <!-- === EXPERIENCIA === -->
-            <div class="cv-block">
-                <h3 class="cv-heading">Experiencia</h3>
-                <div class="cv-entry">
-                    <div class="cv-entry-header">
-                        <div><strong>Diseñador e Implementador de Proyecto Social</strong><br><span class="cv-institution">Fundación Asilo Vivir De Amor F.B.P — Puebla, Pue.</span></div>
-                        <span class="cv-date">Junio 2025 – Agosto 2025</span>
-                    </div>
-                    <p>Planeé e implementé un programa social orientado a la mentoría de voluntarios, coordinando equipos para mejorar la integración y retención, con un enfoque en fortalecer la calidad del servicio comunitario.</p>
-                </div>
-                <div class="cv-entry">
-                    <div class="cv-entry-header">
-                        <div><strong>Diseñador de Campaña de Visibilidad Social</strong><br><span class="cv-institution">Banco de Tapitas A.C. — Ciudad de México, CDMX</span></div>
-                        <span class="cv-date">Enero 2025 – Junio 2025</span>
-                    </div>
-                    <p>Diseñé y ejecuté una campaña de concientización social respecto al cáncer infantil visto desde los ojos de los niños gestionando actividades de comunicación y difusión, la cual fue reconocida con un premio por su impacto social.</p>
-                </div>
-                <div class="cv-entry">
-                    <div class="cv-entry-header">
-                        <div><strong>Vicepresidente, Coordinador de Finanzas y Logística</strong><br><span class="cv-institution">TecStem — Grupo Estudiantil de Ciencias — Puebla, Pue.</span></div>
-                        <span class="cv-date">Enero 2022 – Enero 2024</span>
-                    </div>
-                    <p>Desempeñé funciones como vicepresidente, coordinador de finanzas y logística, liderando proyectos estudiantiles, gestionando los recursos del grupo y organizando eventos académicos con impacto en la comunidad estudiantil.</p>
-                </div>
-                <!-- EDICIÓN FUTURA: INVESTIGACIONES — Duplica un cv-entry aquí -->
+            <div>
+                <h2>Habilidades Blandas [cite: 27]</h2>
+                <ul>
+                    <li>Liderazgo y comunicación efectiva [cite: 28]</li>
+                    <li>Resolución de problemas complejos [cite: 29]</li>
+                    <li>Pensamiento lógico y estratégico [cite: 30]</li>
+                    <li>Aprendizaje continuo [cite: 31]</li>
+                    <li>Trabajo bajo presión [cite: 32]</li>
+                </ul>
             </div>
+        </section>
+    </div>
 
-            <!-- === HABILIDADES === -->
-            <div class="cv-block">
-                <h3 class="cv-heading">Habilidades Técnicas</h3>
-                <div class="skills-tags">
-                    <span class="skill-tag">Análisis y visualización de datos</span>
-                    <span class="skill-tag">Modelado físico y matemático</span>
-                    <span class="skill-tag">Gestión de proyectos y recursos</span>
-                    <span class="skill-tag">Python</span>
-                    <span class="skill-tag">MATLAB</span>
-                    <span class="skill-tag">Office Avanzado</span>
-                    <span class="skill-tag">Notion</span>
-                    <span class="skill-tag">Trello</span>
-                    <span class="skill-tag accent-tag">Lean Six Sigma (Black Belt)</span>
-                    <span class="skill-tag">Diseño de experimentos</span>
-                </div>
-            </div>
-
-            <div class="cv-block">
-                <h3 class="cv-heading">Habilidades Blandas</h3>
-                <div class="skills-tags">
-                    <span class="skill-tag">Liderazgo y comunicación efectiva</span>
-                    <span class="skill-tag">Resolución de problemas complejos</span>
-                    <span class="skill-tag">Pensamiento lógico y estratégico</span>
-                    <span class="skill-tag">Aprendizaje continuo</span>
-                    <span class="skill-tag">Trabajo bajo presión</span>
-                </div>
-            </div>
-
-            <!-- === IDIOMAS (EDICIÓN FUTURA) === -->
-            <!-- Descomenta y edita para agregar idiomas:
-            <div class="cv-block">
-                <h3 class="cv-heading">Idiomas</h3>
-                <div class="skills-tags">
-                    <span class="skill-tag">Español — Nativo</span>
-                    <span class="skill-tag">Inglés — Avanzado (C1)</span>
-                </div>
-            </div>
-            -->
-        </div>
-    </section>
-
-    <!-- ============ SECCIÓN: PORTAFOLIO ============ -->
-    <section id="portfolio" class="section-padding portfolio-section">
-        <div class="container">
-            <h2 class="section-title">Portafolio de Proyectos</h2>
-
-            <!-- PROYECTO 1: FEA 3D -->
-            <article class="portfolio-item">
-                <div class="portfolio-item-header">
-                    <span class="project-number">01</span>
-                    <div>
-                        <h3>Analizador de Elemento Finito Estructural 3D (FEA)</h3>
-                        <div class="project-tags">
-                            <span>Python</span><span>SciPy</span><span>NumPy</span><span>Matplotlib</span><span>openpyxl</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item-img">
-                    <img src="assets/fea_simulation.png" alt="Simulación FEA 3D">
-                </div>
-                <div class="portfolio-item-body">
-                    <h4>¿Qué es?</h4>
-                    <p>Un resolvedor dinámico tridimensional de vigas bajo la formulación de Euler-Bernoulli, orientado al cálculo de esfuerzos de Von Mises, superposición modal y respuesta en frecuencia para estructuras complejas.</p>
-
-                    <h4>¿Cómo funciona?</h4>
-                    <p>El programa resuelve la ecuación de movimiento <code>M·ü(t) + C·u̇(t) + K·u(t) = F(t)</code> mediante superposición modal. Lee la geometría estructural (nodos, elementos, propiedades) desde un archivo Excel y ensambla las matrices globales de masa y rigidez usando formatos dispersos (<code>csr_matrix</code>) para eficiencia computacional.</p>
-                    <ul>
-                        <li><strong>Matrices de Masa Consistente:</strong> Integración exacta de masa distribuida y momentos polares de inercia (formulación de Cook et al.).</li>
-                        <li><strong>Superposición Modal:</strong> Cálculo de frecuencias naturales y respuesta en frecuencia con amortiguamiento proporcional por energía de deformación.</li>
-                        <li><strong>Cargas Múltiples:</strong> Soporte para espectro de Fourier, cargas tipo escalón (pulso 3D) y gravedad estática.</li>
-                        <li><strong>Entrada Inteligente:</strong> Lectura directa desde hojas Excel estructuradas con validación y reparación automática de la malla.</li>
-                        <li><strong>Salidas:</strong> Reporte Excel de 9 hojas, mapas de esfuerzo, animaciones GIF, formas modales y espectros por nodo.</li>
-                    </ul>
-
-                    <div class="equation-block">M·ü(t) + C·u̇(t) + K·u(t) = F₀·e^(iωt) + A·H(t−t₀) + F_grav</div>
-                </div>
-            </article>
-
-            <!-- PROYECTO 2: Lean Six Sigma Black Belt -->
-            <article class="portfolio-item">
-                <div class="portfolio-item-header">
-                    <span class="project-number">02</span>
-                    <div>
-                        <h3>Certificación Black Belt — Lean Six Sigma</h3>
-                        <div class="project-tags">
-                            <span>Lean Six Sigma</span><span>Gestión de Calidad</span><span>Diseño de Experimentos</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item-body">
-                    <h4>¿Qué es?</h4>
-                    <p>Certificación profesional en la metodología Lean Six Sigma a nivel Black Belt, enfocada en la mejora continua de procesos, reducción de variabilidad y eliminación de desperdicios en entornos industriales y de servicios.</p>
-
-                    <h4>¿Qué implica?</h4>
-                    <ul>
-                        <li><strong>Metodología DMAIC:</strong> Dominio completo del ciclo Definir–Medir–Analizar–Mejorar–Controlar para la resolución estructurada de problemas.</li>
-                        <li><strong>Herramientas Estadísticas:</strong> Pruebas de hipótesis, análisis de regresión, diseño de experimentos (DOE) y control estadístico de procesos (SPC).</li>
-                        <li><strong>Gestión de Proyectos:</strong> Liderazgo de equipos multidisciplinarios para proyectos de mejora con impacto medible en indicadores clave (KPIs).</li>
-                    </ul>
-
-                    <a href="assets/Diploma_Black_Belt.pdf" target="_blank" class="btn btn-outline btn-sm">Ver Diploma →</a>
-                </div>
-            </article>
-
-            <!-- EDICIÓN FUTURA: Nuevo proyecto — Duplica un <article class="portfolio-item"> aquí -->
-        </div>
-    </section>
-
-    <!-- ============ SECCIÓN: CONTACTO ============ -->
-    <section id="contact" class="section-padding">
-        <div class="container">
-            <h2 class="section-title">Ponte en Contacto</h2>
-            <div class="contact-card glass-card">
-                <div class="contact-info-panel">
-                    <h3>Información de Contacto</h3>
-                    <p>¿Te interesa colaborar en proyectos de simulación estructural, análisis cuantitativo de datos o optimización de procesos? Estoy abierto a oportunidades de investigación e industriales.</p>
-                    <ul class="contact-details">
-                        <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-                            <a href="mailto:rarvizu271@gmail.com">rarvizu271@gmail.com</a>
-                        </li>
-                        <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-                            <a href="tel:+522213861304">(+52) 221 386 1304</a>
-                        </li>
-                        <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-                            <span>Monterrey, Nuevo León, México</span>
-                        </li>
-                    </ul>
-                    <div class="social-links">
-                        <!-- EDITAR: Reemplaza # con tus enlaces reales -->
-                        <a href="https://github.com" target="_blank" class="social-btn" aria-label="GitHub">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.577.688.479C19.138 20.164 22 16.418 22 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd"/></svg>
-                        </a>
-                        <a href="https://linkedin.com" target="_blank" class="social-btn" aria-label="LinkedIn">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="contact-form-panel">
-                    <form action="mailto:rarvizu271@gmail.com" method="post" enctype="text/plain">
-                        <div class="form-group">
-                            <label for="name">Nombre Completo</label>
-                            <input type="text" id="name" name="nombre" placeholder="Tu nombre" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Correo Electrónico</label>
-                            <input type="email" id="email" name="email" placeholder="tu@correo.com" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Mensaje</label>
-                            <textarea id="message" name="mensaje" rows="5" placeholder="¿En qué puedo ayudarte?" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-full">Enviar Correo Directo</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ============ FOOTER ============ -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; <span id="currentYear"></span> Rafael Alejandro Arvizu Jiménez. Todos los derechos reservados.</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
